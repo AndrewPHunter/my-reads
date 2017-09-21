@@ -1,0 +1,47 @@
+@import '../globals';
+
+.book{
+
+  width: 140px;
+
+  .book-top {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+
+    .book-top--cover{
+      width: 128px;
+      height: 193px;
+    }
+
+    .book-top--action{
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+    }
+  }
+
+  .book-title {
+    margin-top: 10px;
+  }
+
+  .book-authors{
+    color: $md-grey-600;
+  }
+}
+
+.book-hover{
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.book-action--active{
+  background-color: $md-primary-color;
+
+  .md-text{
+    color: $md-white-base;
+    font-weight: bold;
+  }
+}

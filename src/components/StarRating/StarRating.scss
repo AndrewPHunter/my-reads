@@ -1,0 +1,14 @@
+@import '../globals';
+
+.star-list{
+  list-style: none;
+
+  .star-list-item{
+    display: inline-block;
+    margin-left: .2em;
+
+    .star-list-item--star{
+      color: $md-yellow-500;
+    }
+  }
+}

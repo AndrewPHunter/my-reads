@@ -1,0 +1,28 @@
+@import '../globals';
+
+.bookshelf{
+
+  @extend .md-grid;
+
+  .bookshelf-shelf{
+
+    @extend .md-cell--12;
+    @extend .md-block-centered;
+    @include md-box-shadow(3);
+    min-height: 350px;
+    background-color: $md-white-base;
+    margin-top: 2em;
+    padding:15px;
+
+    .bookshelf-shelf--title{
+      font-size: 4em;
+      font-weight: 700;
+      font-family: "Tangerine";
+    }
+
+    .bookshelf-shelf--list{
+      text-align: center;
+    }
+
+  }
+}

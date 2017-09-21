@@ -1,0 +1,38 @@
+@import '../globals';
+
+.searchbar{
+  margin-top: 0;
+  padding: 10px;
+  height: 100px;
+  background-color: $md-white-base;
+  color: $md-grey-700;
+
+  .searchbar-items{
+
+    @extend .md-grid;
+    padding-top: 15px;
+
+    .searchbar-items--back-container{
+
+      @extend .md-cell--1;
+
+    }
+
+    .searchbar-items--back-button{
+      font-size: 3.5em;
+      color: $md-grey-700;
+    }
+
+    .searchbar-items--search-container{
+
+      @extend .md-cell--11;
+
+
+      .searchbar-items--search{
+        font-size: 3em;
+        margin-top:-17px;
+      }
+
+    }
+  }
+}

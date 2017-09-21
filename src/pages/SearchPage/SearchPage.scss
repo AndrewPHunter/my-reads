@@ -1,0 +1,13 @@
+@import '../../components/globals';
+
+.searchpage {
+
+  @extend .md-grid--no-spacing;
+
+  .searchpage-results{
+
+    @extend .md-grid;
+
+  }
+
+}

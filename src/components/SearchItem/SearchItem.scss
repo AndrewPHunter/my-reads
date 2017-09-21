@@ -1,0 +1,82 @@
+@import '../globals';
+
+.search-item {
+
+  @extend .md-cell--12;
+  @include md-box-shadow(3);
+  min-height: 250px;
+  background-color: $md-white-base;
+  padding: 15px;
+  margin-top: 2em;
+
+  .search-item--info {
+
+    @extend .md-grid;
+
+  }
+
+}
+
+.book-cover--container{
+  @extend .md-cell--2;
+  @extend .md-cell--middle;
+}
+
+.book-detail--container{
+  @extend .md-cell--10;
+}
+
+.book-detail--grid{
+  @extend .md-grid--no-spacing;
+}
+
+.book-detail--line{
+  @extend .md-cell--12;
+}
+
+.book-detail--inline{
+  display: inline-block;
+}
+
+.book-detail--inline-pad{
+  margin-left: .5em;
+}
+
+.star-container{
+  li{
+    i{
+      font-size: 1.2em;
+    }
+  }
+}
+
+.book-actions--container{
+
+  @extend .md-cell--12;
+  @extend .md-divider-border;
+  @extend .md-divider-border--top;
+
+  padding-top: 1em;
+}
+
+.book-actions--list{
+  list-style: none;
+  padding: 0;
+}
+
+.book-actions--item{
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+.book-actions--button{
+
+  transition: background-color .5s ease;
+  transition: color .5s ease;
+
+  &:hover{
+
+    background-color: $md-primary-color;
+    color: $md-white-base;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../components/globals';
+
+.homepage{
+
+  @extend .md-grid--no-spacing;
+
+  .homepage-search{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    .homepage-search--link{
+      color: $md-white-base
+    }
+  }
+}

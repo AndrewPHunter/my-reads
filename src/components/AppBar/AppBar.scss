@@ -1,0 +1,18 @@
+@import '../globals';
+
+.app-header {
+  margin-top: 0;
+  height: 100px;
+  background-color: $md-primary-color;
+  text-align: center;
+
+  .app-header--title{
+    padding-top: 25px;
+    font-size: 60px;
+    font-weight: 700;
+    color: $md-white-base;
+    font-family: "Tangerine";
+  }
+}
+
+

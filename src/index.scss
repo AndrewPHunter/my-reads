@@ -1,0 +1,14 @@
+@import 'components/globals';
+
+@include react-md-everything;
+
+html{
+  background-color: $md-grey-300;
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
