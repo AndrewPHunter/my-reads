@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "escape-string-regexp": "^1.0.5",
     "lodash.debounce": "^4.0.8",
+    "lodash.keyby": "^4.6.0",
     "lodash.startcase": "^4.4.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

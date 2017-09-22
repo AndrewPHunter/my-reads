@@ -27,13 +27,18 @@ export class SearchPage extends Component{
 
   onBookUpdated = (updatedBook)=>{
 
-    const searchResults = [
-      ...this.state.searchResults.filter(book=>book.id !== updatedBook.id)
+    const {searchResults} = this.state;
+    const updatedBookIndex = searchResults.findIndex(book=>book.id === updatedBook.id);
+
+    const updatedResults = [
+      ...searchResults.slice(0,updatedBookIndex),
+      ...[updatedBook],
+      ...searchResults.slice(updatedBookIndex+1, searchResults.length)
     ];
 
     this.props.onBookUpdated(updatedBook);
 
-    this.setState({searchResults});
+    this.setState(()=>({searchResults: updatedResults}));
 
   };
 

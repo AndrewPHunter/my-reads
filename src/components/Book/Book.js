@@ -48,7 +48,7 @@ export class Book extends PureComponent{
           </div>
         </div>
         <div className="book-title">{title}</div>
-        <div className="book-authors">{authors.join(' ')}</div>
+        {authors && <div className="book-authors">{authors.join(' ')}</div>}
       </div>
     );
   }

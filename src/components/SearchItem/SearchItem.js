@@ -58,13 +58,13 @@ export class SearchItem extends PureComponent{
     </div>
   );
 
-  renderBookActionItems = (shelfList, onBookUpdated)=>(
+  renderBookActionItems = (shelf, shelfList, onBookUpdated)=>(
     <ul className="book-actions--list">
       {Object
         .keys(shelfList)
         .map(key=>(
           <li key={key}
-              className="book-actions--item"
+              className={`book-actions--item ${key === shelf ? 'active':''}`}
           >
             <Button
               className="book-actions--button"
@@ -93,7 +93,7 @@ export class SearchItem extends PureComponent{
           <div className="book-detail--container">
             {this.renderBookDetail(book)}
             <div className="book-actions--container">
-              {this.renderBookActionItems(shelfList, this.onBookUpdated)}
+              {this.renderBookActionItems(book.shelf, shelfList, this.onBookUpdated)}
             </div>
           </div>
         </div>

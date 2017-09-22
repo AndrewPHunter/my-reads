@@ -74,9 +74,12 @@
   transition: background-color .5s ease;
   transition: color .5s ease;
 
+  .active &,
   &:hover{
 
     background-color: $md-primary-color;
     color: $md-white-base;
   }
+
 }
+
