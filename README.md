@@ -20,6 +20,22 @@ buildStarArray = (rating, total)=>{
 
   };
 ```
+
+### Directory Structure
+
+<p>
+The layout of the component directory may at first seem odd however it was performed with the explicit purpose
+of allowing either the default import of a styled component or the explicit import of the unstyled (non css imported)
+component to allow for maximum reusability  of the components.
+</p>
+<p>
+An example of this pattern can be found below:
+</p>
+
+```js
+import BookShelf from '../../components/BookShelf'; //styled component
+import BookShelf from '../../components/BookShelf/BookShelf'; //unstyled component
+```
 ### Technology Used
 * [create-react-app](https://github.com/facebookincubator/create-react-app)
 * [react-md](https://react-md.mlaursen.com/)
